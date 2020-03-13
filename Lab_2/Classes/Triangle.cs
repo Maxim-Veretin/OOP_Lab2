@@ -12,7 +12,7 @@ namespace Lab_2
         private Point2D point2;
         private Point2D point3;
 
-        public void SetTriangle(Point2D point1, Point2D point2, Point2D point3)
+        public void Triangle(Point2D point1, Point2D point2, Point2D point3)
         {
             this.point1 = point1;
             this.point2 = point2;
