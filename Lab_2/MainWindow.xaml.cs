@@ -24,5 +24,20 @@ namespace Lab_2
         {
             InitializeComponent();
         }
+
+        private void rndTr_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void rndRect_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void rect_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
