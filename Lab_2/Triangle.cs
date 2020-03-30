@@ -36,38 +36,32 @@ namespace Lab_2
 
         public void ShiftX(double value)
         {
-            point1.ShiftX(point1.GetX()+ value);
-            point2.ShiftX(point2.GetX() + value);
-            point3.ShiftX(point3.GetX() + value);
+            point1.ShiftX(value);
+            point2.ShiftX(value);
+            point3.ShiftX(value);
         }
 
         public void ShiftY(double value)
         {
-            point1.ShiftY(point1.GetY() + value);
-            point2.ShiftY(point2.GetY() + value);
-            point3.ShiftY(point3.GetY() + value);
+            point1.ShiftY(value);
+            point2.ShiftY(value);
+            point3.ShiftY(value);
         }
 
         public double GetPerimeter()
         {
-            double a = point1.GetDistance(point2);
-            double b = point2.GetDistance(point3);
-            double c = point3.GetDistance(point1);
-
-            return a + b + c;
+            return  point1.GetDistance(point2) +
+                    point2.GetDistance(point3) +
+                    point3.GetDistance(point1);
         }
 
         public double GetArea()
         {
-            double p = GetPerimeter() / 2;
-
-            double a = point1.GetDistance(point2);
-            double b = point2.GetDistance(point3);
-            double c = point3.GetDistance(point1);
-
-            double area = Math.Sqrt(p * (p - a) * (p - b) * (p - c));
-
-            return area;
+            return Math.Sqrt(GetPerimeter() / 2 *
+                            (GetPerimeter() / 2 - point1.GetDistance(point2)) *
+                            (GetPerimeter() / 2 - point2.GetDistance(point3)) *
+                            (GetPerimeter() / 2 - point3.GetDistance(point1))
+                            );
         }
     }
 }

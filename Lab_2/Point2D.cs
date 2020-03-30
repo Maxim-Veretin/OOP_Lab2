@@ -10,6 +10,8 @@ namespace Lab_2
     {
         private double x;
         private double y;
+        private double xShift = 0;
+        private double yShift = 0;
 
         public Point2D(double x, double y)
         {
@@ -19,22 +21,33 @@ namespace Lab_2
 
         public double GetX()
         {
-            return x;
+            return x + xShift;
         }
 
         public double GetY()
         {
-            return y;
+            return y + yShift;
         }
 
-        public void ShiftX(double x)
+        #region КОСТЫЛИ
+        public double GetShiftX()
         {
-            this.x += x;
+            return xShift;
+        }
+        public double GetShiftY()
+        {
+            return yShift;
+        }
+        #endregion НЕ ТРОГАТЬ
+
+        public void ShiftX(double value)
+        {
+            xShift = value;
         }
 
-        public void ShiftY(double y)
+        public void ShiftY(double value)
         {
-            this.y += y;
+            yShift = value;
         }
 
         public double GetDistance(Point2D otherPoint)

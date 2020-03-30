@@ -9,23 +9,19 @@
     <Grid>
         <Image Source="фон.jpg" Stretch="Fill" HorizontalAlignment="Right" Width="792" Height="419" VerticalAlignment="Bottom"/>
 
-        <Button x:Name="rndTr" Content="Произвольный &#xD;&#xA;Треугольник" HorizontalAlignment="Left" Margin="25,28,0,0" VerticalAlignment="Top" Width="138" Height="56" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="rndTr_Click"/>
-        <Button x:Name="rndRect" Content="Произвольный&#xD;&#xA;Прямоугольник" HorizontalAlignment="Left" Margin="25,106,0,0" VerticalAlignment="Top" Width="138" Height="56" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="rndRect_Click"/>
-        <Button x:Name="rect" Content="Прямоугольник" HorizontalAlignment="Left" Margin="25,180,0,0" VerticalAlignment="Top" Width="138" Height="56" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="rect_Click"/>
+        <Button x:Name="rndTr" Content="Произвольный&#xD;&#xA;Треугольник" Width="140" Height="60" Margin="10,10,0,0" Click="rndTr_Click" HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button x:Name="rndRect" Content="Произвольный&#xD;&#xA;Прямоугольник" Width="140" Height="60" Margin="10,80,0,0" Click="rndRect_Click" HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button x:Name="square" Content="Квадрат" HorizontalAlignment="Left" Width="140" Height="60" Margin="10,150,0,0" Click="square_Click" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
 
-        <Slider x:Name="shiftx" HorizontalAlignment="Left" Margin="254,28,0,0" VerticalAlignment="Top" Width="505"/>
-        <Slider x:Name="shifty" HorizontalAlignment="Left" Margin="254,66,0,0" VerticalAlignment="Top" Width="505"/>
+        <Slider x:Name="shiftx" Width="577" Height="25" Margin="198,10,0,0" Minimum="-599" Maximum="599" Value="0" HorizontalAlignment="Left" VerticalAlignment="Top" ValueChanged="shiftx_ValueChanged"/>
+        <Slider x:Name="shifty" Width="575" Height="25" Margin="200,52,0,0" Minimum="-299" Maximum="299" Value="0" HorizontalAlignment="Left" VerticalAlignment="Top" ValueChanged="shifty_ValueChanged"/>
 
-        <Label HorizontalAlignment="Left" Margin="232,28,0,0" Content="X:" VerticalAlignment="Top"/>
-        <Label HorizontalAlignment="Left" Margin="232,66,0,0" Content="Y:" VerticalAlignment="Top"/>
+        <Label Content="X:" Width="20" Height="25" Margin="173,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Content="Y:" Width="20" Height="25" Margin="175,45,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
-        <Canvas x:Name="can" HorizontalAlignment="Left" Height="300" Width="600" Margin="182,109,0,0" VerticalAlignment="Top" Background="#FFE8D8D8"/>
-        
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="25,269,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="65" Background="#FFA9D8FF"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="98,269,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="65" Background="#FFA9D8FF"/>
-        
-        <Label Content="Ширина" HorizontalAlignment="Left" Margin="25,241,0,0" VerticalAlignment="Top" Width="65" Height="23"/>
-        <Label Content="Высота" HorizontalAlignment="Left" Margin="98,241,0,0" VerticalAlignment="Top" Width="65" Height="23"/>
+        <Canvas x:Name="canvas" HorizontalAlignment="Left" Height="300" Width="600" Margin="175,100,0,0" VerticalAlignment="Top" Background="#FFE8D8D8"/>
+        <Label x:Name="info" Content="здесь будет&#xD;&#xA;информация" Width="140" Height="180" HorizontalAlignment="Left" Margin="10,220,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Button x:Name="clear" Content="Clear" HorizontalAlignment="Left" Margin="175,77,0,0" VerticalAlignment="Top" Width="75" Click="clear_Click"/>
 
     </Grid>
 </Window>

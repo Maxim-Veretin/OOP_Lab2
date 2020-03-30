@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Lab_2",
-    "\\Lab_2\\Classes"
+    "\\Lab_2"
   ],
-  "SelectedNode": "\\Lab_2\\Classes\\Point2D.cs",
+  "SelectedNode": "\\Lab_2\\MainWindow.xaml",
   "PreviewInSolutionExplorer": false
 }
