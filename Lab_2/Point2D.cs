@@ -10,8 +10,8 @@ namespace Lab_2
     {
         private double x;
         private double y;
-        private double xShift = 0;
-        private double yShift = 0;
+        private double xShift;
+        private double yShift;
 
         public Point2D(double x, double y)
         {
